@@ -1,0 +1,46 @@
+.advances {
+    min-height: 650px;
+    width: 100%;
+    background: #f6f5fc;
+    padding: 150px 0 230px 0;
+}
+
+.advances__content {
+    width: 100%;
+    padding: 0 100px;
+}
+
+.advances__content .title__text {
+    margin-bottom: 20px;
+}
+
+.advances__text {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+}
+
+
+
+/* Адаптація */
+
+@media screen and (max-width: 768px) {
+    .advances__content {
+        padding: 0 50px;
+    }
+
+    .advances__text {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .advances__content {
+        padding: 0 25px;
+    }
+
+    .advances__text {
+        font-size: 16px;
+    }
+}

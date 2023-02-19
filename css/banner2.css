@@ -1,0 +1,60 @@
+.banner__2 {
+    max-width: 800px;
+    padding: 75px 200px;
+    background: #B05FFE;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-bottom: 10 0px;
+    position: relative;
+    top: -150px;
+}
+
+.banner__2 .banner__title {
+    margin-bottom: 10px;
+}
+
+.banner__subtitle {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.banner__2 .banner__button {
+    background: #3b4075;
+}
+
+.banner__2 .banner__button button {
+    color: #fff;
+}
+
+
+
+/* Адаптація */
+
+@media screen and (max-width: 768px) {
+    .banner__2 {
+        padding: 65px 75px;
+    }
+
+    .banner__title {
+        font-size: 22px;
+    }
+
+    .banner__subtitle {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .banner__2 {
+        padding: 45px 25px;
+    }
+
+    .banner__title {
+        font-size: 20px;
+    }
+
+    .banner__subtitle {
+        font-size: 14px;
+    }
+}

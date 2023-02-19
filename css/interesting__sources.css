@@ -1,19 +1,44 @@
 .interesting__sources {
     background: #F6F5FC;
     width: 100%;
+
     min-height: 500px;
     padding-top: 200px;
     padding-bottom: 200px;
 }
 
+.interesting__sources-slider {
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
 .sources__scroll {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    /* flex-wrap: wrap; */
     gap: 50px;
-    row-gap: 100px;
+    /* row-gap: 100px; */
     justify-content: space-between;
     position: relative;
+    padding-bottom: 20px;
+}
+
+.sources__scroll::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.sources__scroll::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 10px;
+}
+
+.sources__scroll::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 /* .sources__scroll::before, .sources__scroll::after {

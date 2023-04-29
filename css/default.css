@@ -1,0 +1,84 @@
+body, button, h1, h2, h3, h4, h5, h6, p, img, a {
+    background: none;
+    border-radius: 0;
+    border-color: transparent;
+    box-shadow: none;
+    text-decoration: none;
+    font-family: Sofia Sans, sans-serif;
+    color: var(--dark);
+}
+
+button, p, a {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Кольори */
+
+:root {
+    --white: #fff;
+    --black: #000;
+
+    --dark: #212121;
+    --dark65: #212121a6;
+
+    --main: #6358FF;
+    --main35: #6257ff59;
+    --main50: #6257ff80;
+    --main3: #6257ff08;
+}
+
+/* Кінець кольорів */
+
+.container {
+    max-width: 1250px;
+    padding: 0 25px;
+    margin: 0 auto;
+}
+
+.title__text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    color: #6358FF;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.subtitle__text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #000000;
+    margin-bottom: 80px;
+}
+
+
+/* Адаптація */
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 35px;
+    }
+
+    .subtitle__text {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .subtitle__text {
+        font-size: 20px;
+    }
+}

@@ -17,12 +17,15 @@ button, p, a {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 /* Кольори */
 
 :root {
     --white: #fff;
+    --white85: #ffffffd9;
+    
     --black: #000;
 
     --dark: #212121;

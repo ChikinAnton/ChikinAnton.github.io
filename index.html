@@ -54,11 +54,10 @@
             <div class="container">
                 <div class="header__toolbar">
                     <div class="toolbar__content">
-                        <div class="toolbar__topline">
-                            <p>Навігація</p>
-                            <p>Інформація</p>
-                            <p>Розробник</p>
-                        </div>
+                        <a href="#js-anchor" class="toolbar-item">JavaScript</a>
+                        <a href="#diary-anchor" class="toolbar-item">Щоденник</a>
+                        <a href="#advances-anchor" class="toolbar-item">Переваги</a>
+                        <a href="#frameworks-anchor" class="toolbar-item">Фреймворки</a>
                     </div>
                 </div>
             </div>
@@ -73,7 +72,7 @@
         <!-- 
             Блок напрямки руху сучасного js 
         -->
-        <div class="js__block">
+        <div id="js-anchor" class="js__block">
             <div class="container">
                 <div class="js__block_text">
                     <h3 class="title__text">JAVASCRIPT</h3>
@@ -82,34 +81,34 @@
                 <div class="js__block_cards">
                     <div class="js__card">
                         <div class="js__card-image">
-                            <img src="/img/site.png" alt="" class="js__card-img">
+                            <img src="./img/web_dev-icon.png" alt="" class="js__card-img">
                         </div>
-                        <p class="js__card-title">Сайти</p>
-                        <p class="js__card-description">Додаток, в якому клієнтом є оглядач Інтернета, а сервером — веб-сервер.</p>
+                        <p class="js__card-title">Веб-розробка</p>
+                        <p class="js__card-description">Використовується для створення динамічних сторінок, інтерактивних веб-додатків тощо.</p>
                     </div>
 
                     <div class="js__card">
                         <div class="js__card-image">
-                            <img src="/img/site.png" alt="" class="js__card-img">
+                            <img src="./img/mobile_dev-icon.png" alt="" class="js__card-img">
                         </div>
-                        <p class="js__card-title">Сайти</p>
-                        <p class="js__card-description">Додаток, в якому клієнтом є оглядач Інтернета, а сервером — веб-сервер.</p>
+                        <p class="js__card-title">Мобільні додатки</p>
+                        <p class="js__card-description">Розробка мобільних додатків з використанням фреймворків, таких як React Native, Ionic, Cordova тощо.</p>
                     </div>
 
                     <div class="js__card">
                         <div class="js__card-image">
-                            <img src="/img/site.png" alt="" class="js__card-img">
+                            <img src="./img/desktop_dev-icon.png" alt="" class="js__card-img">
                         </div>
-                        <p class="js__card-title">Сайти</p>
-                        <p class="js__card-description">Додаток, в якому клієнтом є оглядач Інтернета, а сервером — веб-сервер.</p>
+                        <p class="js__card-title">Десктопні додатки</p>
+                        <p class="js__card-description">З використанням технологій, таких як Electron, можна створювати десктопні додатки.</p>
                     </div>
 
                     <div class="js__card">
                         <div class="js__card-image">
-                            <img src="/img/site.png" alt="" class="js__card-img">
+                            <img src="./img/ai_dev-icon.png" alt="" class="js__card-img">
                         </div>
-                        <p class="js__card-title">Сайти</p>
-                        <p class="js__card-description">Додаток, в якому клієнтом є оглядач Інтернета, а сервером — веб-сервер.</p>
+                        <p class="js__card-title">Машине навчання, AI</p>
+                        <p class="js__card-description">JavaScript використовується для програмування нейронних мереж та інших алгоритмів машинного навчання.</p>
                     </div>
                 </div>
             </div>
@@ -130,37 +129,9 @@
         </div>
 
         <!-- 
-            Блок інтересні джерела 
-        -->
-        <!-- <div class="interesting__sources">
-            <div class="container">
-                <div class="title__text">Додатково</div>
-                <div class="subtitle__text">Інтересні джерела</div>
-                <div class="sources__scroll">
-                    
-                    <div class="sources__card">
-                        <a href="https://www.w3schools.com/js/js_versions.asp" target="_blank">
-                            <div class="sources__card-img"><img src="/img/js_version.jpg" alt="Картинка"></div>
-                            <div class="sources__card-text">
-                                <div class="sources__card-title">Версії JavaScript</div>
-                                <div class="sources__card-source">Джерело: w3schools</div>
-                            </div>
-                        </a>
-                    </div>
-
-                </div>
-                <div class="slider__button-box">
-                    <button class="slider__button">Назад</button>
-                    <button class="slider__button">Вперед</button>
-
-                </div>
-            </div>
-        </div> -->
-
-        <!-- 
             Щоденник
         -->
-        <div class="diary">
+        <div id="diary-anchor" class="diary">
             <div class="container">
                 <div class="diary__block">
                     <div class="diary__list">
@@ -256,7 +227,7 @@
         <!-- 
             Блок переваги 
         -->
-        <div class="advances">
+        <div id="advances-anchor" class="advances">
             <div class="container">
                 <div class="advances__content">
                     <p class="title__text">Переваги</p>
@@ -281,7 +252,7 @@
         <!-- 
             Блок фреймворки 
         -->
-        <div class="frameworks">
+        <div id="frameworks-anchor" class="frameworks">
             <div class="container">
                 <div class="frameworks__container">
                     <div class="frameworks__left">
@@ -291,13 +262,13 @@
                             <div class="frameworks__items">
 
                                 <div class="frameworks__item">
-                                    <img src="./img/vue-icon.svg" alt="vue.js" class="fw__img">
+                                    <img src="./img/vue-icon.png" alt="vue.js" class="fw__img">
                                     <p class="fw__title">Vue.js</p>
                                     <p class="fw__description">Працює на базі звичайного HTML, CSS та JavaScript, з можливостями декларативно програмувати користувацькі інтерфейси будь-якої складності на основі компонентів.</p>
                                 </div>
 
                                 <div class="frameworks__item">
-                                    <img src="./img/react-icon.svg" alt="react" class="fw__img">
+                                    <img src="./img/react-icon.png" alt="react" class="fw__img">
                                     <p class="fw__title">react</p>
                                     <p class="fw__description">Використовується для створення сучасних інтерфейсів сайтів. Розвивається за підтримки Instagram і великого співтовариства розробників.</p>
                                 </div>
@@ -307,13 +278,13 @@
                             <div class="frameworks__items">
 
                                 <div class="frameworks__item">
-                                    <img src="./img/angular-icon.svg" alt="angular" class="fw__img">
+                                    <img src="./img/angular-icon.png" alt="angular" class="fw__img">
                                     <p class="fw__title">Angular</p>
                                     <p class="fw__description">Використовується для розробки складних сайтів та веб-систем, а також додатків для iOS та Android, як основа технології Ionic.</p>
                                 </div>
 
                                 <div class="frameworks__item">
-                                    <img src="./img/node_js-icon.svg" alt="node.js" class="fw__img">
+                                    <img src="./img/node_js-icon.png" alt="node.js" class="fw__img">
                                     <p class="fw__title">Node.js</p>
                                     <p class="fw__description">Платформа була створена для швидких мережевих застосунків, які легко масштабувати.</p>
                                 </div>

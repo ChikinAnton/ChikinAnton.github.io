@@ -13,7 +13,6 @@
 .header {
     width: 100%;
     max-width: 1850px;
-    height: 90vh;
     min-height: 500px;
     margin: 0 auto;
 }
@@ -53,7 +52,7 @@
 }
 
 .website::before {
-    content: url(/img/play_icon.svg);
+    content: url(../img/play_icon.svg);
     margin-right: 5px;
 }
 
@@ -466,6 +465,7 @@
     justify-content: space-between;
     gap: 60px;
     height: 100%;
+    width: 100%;
 }
 
 .diary__list {
@@ -498,8 +498,9 @@
     margin-bottom: 20px;
 }
 
-.diary-item .day {
+.day {
     min-width: 50px;
+    width: 50px;
     height: 50px;
     border: 1px solid var(--main35);
     border-radius: 20px;
@@ -511,20 +512,17 @@
     color: var(--dark);
     transition: 0.2s;
 }
-
-.diary-item .day span {
+.day span {
     display: none;
     color: var(--white);
 }
-
-.diary-item .day:hover {
+.day:hover {
     cursor: pointer;
     min-width: 100px;
     background: var(--main);
     color: var(--white);
 }
-
-.diary-item .day:hover span {
+.day:hover span {
     display: block;
 }
 
@@ -550,7 +548,6 @@
 
 .diary__img {
     width: 100%;
-    /* max-width: 565px; */
     height: 75%;
     object-fit: cover;
     margin-top: 25px;
@@ -831,4 +828,147 @@
     .fw__description {
         font-size: 14px;
     }
+}
+
+
+/* 
+    Шапка щоденника
+*/
+
+.header__diary {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 110px;
+    width: 90%;
+    margin-bottom: 120px;
+}
+
+.header__diary .text {
+    min-width: 300px;
+}
+
+.header__diary .subtitle__text {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.header__diary .description {
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    color: var(--dark65);
+}
+
+.header__diary img {
+    height: 350px;
+    border-radius: 30px;
+    width: 600px;
+    min-width: 300px;
+    object-fit: cover;
+}
+
+/* 
+    Адаптація
+*/
+
+@media screen and (max-width: 768px) {
+    .header__diary {
+        flex-wrap: wrap;
+    }
+}
+
+
+/* 
+    Щоденник
+*/
+
+.diary-days {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.diary-days .level__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--main);
+    margin-bottom: 20px;
+}
+
+.diary-days .days {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 25px;
+}
+
+.diary-days .day__block {
+    width: 110px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* 
+    Шапка розказу
+*/
+
+.header__day {
+    background: linear-gradient(257.16deg, #EEEEFA 0%, #CECEFC 22.92%, #DDE2F6 47.92%, #CBEAFC 72.4%, #DAEDFC 100%);
+    /* background: var(--main); */
+    color: var(--main);
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 110px;
+    margin-bottom: 120px;
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 90%;
+    text-align: center;
+}
+
+/* 
+    Адаптація
+*/
+
+@media screen and (max-width: 768px) {
+    .header__day {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .header__day {
+        font-size: 24px;
+    }
+}
+
+
+/* 
+    Стилі розказу
+*/
+
+.narration {
+    display: flex;
+    flex-direction: column;
+}
+
+.narration__paragraph {
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.code__examples {
+    width: 100%;
+    max-width: 1000px;
+    align-self: center;
 }

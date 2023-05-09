@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DAYS - Щоденник</title>
+
+    <!-- 
+        CSS
+        -->
+    <link rel="stylesheet" href="css/html.css">
+
+    <!--
+        Шрифти
+        -->
+    <link rel="preload" href="./fonts/sofia-sans-v13-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/sofia-sans-v13-latin_cyrillic-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/sofia-sans-v13-latin_cyrillic-800.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/baloo-bhai-2-v21-latin-800.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- 
+        Іконка
+        -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./img/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/icon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="./img/icon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+
+    <!-- 
+        Шапка
+    -->
+    <header class="header">
+        <div class="line__container">
+            <div class="header__line">
+                <div class="header__logo">
+                    <a href="./index.html"><img src="img/logo.png" alt="JS DAYS"> days</a>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav__item">Головна</a>
+                    <a href="diary.html" class="nav__item active">Щоденник</a>
+                    <a href="#" class="nav__item">Колекція робіт</a>
+                    <a href="#" class="nav__item website">Вебсайт</a>
+                </nav>
+            </div>
+            <div class="header__diary">
+                <div class="text">
+                    <h3 class="subtitle__text">Щоденник моїх досягнень в javaScript по днях</h3>
+                    <p class="description">Всі дні поділені по рівннях для кращого розуміння складності теми</p>
+                </div>
+                <img src="./img/diary-img.jpg.jpg">
+            </div>
+        </div>
+    </header>
+    
+    <!-- 
+        Основний контент
+     -->
+    <main class="main">
+
+        <!-- 
+            Щоденник
+         -->
+        <div class="diary-days container">
+            <div class="level">
+                <p class="level__title">елементарний рівень</p>
+                <div class="elementary-days days">
+                    
+                </div>
+            </div>
+            <div class="level">
+                <p class="level__title">базовий рівень</p>
+                <div class="days">
+                    <div class="day__block">
+                        <a class="day">1<pre><span> день</span></pre></a>
+                    </div>
+                    <div class="day__block">
+                        <a class="day">1<pre><span> день</span></pre></a>
+                    </div>
+                    <div class="day__block">
+                        <a class="day">1<pre><span> день</span></pre></a>
+                    </div>
+                    <div class="day__block">
+                        <a class="day">1<pre><span> день</span></pre></a>
+                    </div>
+                    <div class="day__block">
+                        <a class="day">1<pre><span> день</span></pre></a>
+                    </div>
+                    <div class="day__block">
+                        <a class="day">1<pre><span> день</span></pre></a>
+                    </div>
+                </div>
+            </div>
+            <div class="level">
+                <p class="level__title">просунутий рівень</p>
+                <div class="days">
+                    <div class="day__block">
+                        <a class="day">1<pre><span> день</span></pre></a>
+                    </div>
+                    <div class="day__block">
+                        <a class="day">1<pre><span> день</span></pre></a>
+                    </div>
+                    <div class="day__block">
+                        <a class="day">1<pre><span> день</span></pre></a>
+                    </div>
+                    <div class="day__block">
+                        <a class="day">1<pre><span> день</span></pre></a>
+                    </div>
+                    <div class="day__block">
+                        <a class="day">1<pre><span> день</span></pre></a>
+                    </div>
+                    <div class="day__block">
+                        <a class="day">1<pre><span> день</span></pre></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 
+        js
+     -->
+    <script src="js/app.js"></script>
+    <script>
+        loadTableDay();
+    </script>
+</body>
+</html>

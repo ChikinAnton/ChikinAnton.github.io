@@ -198,6 +198,10 @@ const advancedDays = document.querySelector('.advanced-days');
 const narrationTitle = document.querySelector('.narration__title');
 const backPageButton = document.querySelector('.back-page');
 const nextPageButton = document.querySelector('.next-page');
+const menuButton = document.querySelector('.menu__button');
+const menuWindow = document.querySelector('.navigation__window');
+
+menu = false;
 
 dayToIndex = 0;
 stateDay = 0;
@@ -300,5 +304,19 @@ function nextPage(elem){
         titleWebsite.innerHTML = `JS DAYS - ${DATABASEDAYS[stateDay].title}`
         backPageButton.style.background = "var(--main)";
         nextPageButton.style.background = "var(--main)";
+    };
+};
+
+// Функція для відображення мобільного меню
+function mobileMenu(){
+    if(menu == false){
+        // menuWindow.classList.add('nav-active');
+        menuWindow.style.left = "0";
+
+        menu = true;
+    }else if(menu == true){
+        // menuWindow.classList.remove('nav-active');
+        menuWindow.style.left = "-400px";
+        menu = false;
     };
 };

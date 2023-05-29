@@ -15,8 +15,8 @@ const DATABASEDAYS = [
         level: 'elementary',
         title: 'Синтаксис в JavaScript',
         narration: `<p class="narration__paragraph">Привіт! Я знаю, що вивчення синтаксису JavaScript може бути складним і заплутаним на початку, тому дозвольте мені розповісти вам про це з розумінням, що ви тільки починаєте вивчати JavaScript.</p>
-                    <p class="narration__paragraph">JavaScript - це мова програмування, яку використовують для розробки веб-додатків. Вона має свій власний синтаксис, який дуже схожий на синтаксис інших мов програмування, таких як Java, C і Python.</p>
-                    <p class="narration__paragraph">Основою JavaScript є інструкції, які дозволяють виконувати різні дії. </p>`,
+                    <p class="narration__paragraph"><span class="day__word-mark">JavaScript</span> - це мова програмування, яку використовують для розробки веб-додатків. Вона має свій власний синтаксис, який дуже схожий на синтаксис інших мов програмування, таких як <span class="day__word-mark">Java, C і Python.</span></p>
+                    <p class="narration__paragraph">Основою JavaScript є інструкції, які дозволяють виконувати різні дії.</p>`,
         codeExamples: ''
     },
     {
@@ -24,17 +24,15 @@ const DATABASEDAYS = [
         level: 'elementary',
         title: 'Про типи данних в JavaScript',
         narration: `<p class="narration__paragraph">В JavaScript є кілька типів даних, основні з яких включають:</p>
-                    <p class="narration__paragraph">
-                        <ol>
-                            <li>Рядки (Strings) - це послідовності символів, які можуть містити букви, цифри, символи пунктуації та інші знаки.</li>
-                            <li>Числа (Numbers) - це числові значення, які можуть бути цілими або дробовими.</li>
-                            <li>Булеві значення (Booleans) - це значення "true" (істина) або "false" (хиба), які використовуються для логічних операцій.</li>
-                            <li>Масиви (Arrays) - це колекції значень, які можуть бути різних типів.</li>
-                            <li>Об'єкти (Objects) - це структури даних, що містять властивості та методи.</li>
-                            <li>Функції (Functions) - це блоки коду, які можуть бути викликані та виконувати певні дії.</li>
-                            <li>Null та undefined - це спеціальні значення, що вказують на відсутність значення.</li>
+                        <ol class="narration__paragraph">
+                            <li><span class="day__word-mark">Рядки (Strings)</span> - це послідовності символів, які можуть містити букви, цифри, символи пунктуації та інші знаки.</li>
+                            <li><span class="day__word-mark">Числа (Numbers)</span> - це числові значення, які можуть бути цілими або дробовими.</li>
+                            <li><span class="day__word-mark">Булеві значення (Booleans)</span> - це значення "true" (істина) або "false" (хибна), які використовуються для логічних операцій.</li>
+                            <li><span class="day__word-mark">Масиви (Arrays)</span> - це колекції значень, які можуть бути різних типів.</li>
+                            <li><span class="day__word-mark">Об'єкти (Objects)</span> - це структури даних, що містять властивості та методи.</li>
+                            <li><span class="day__word-mark">Функції (Functions)</span> - це блоки коду, які можуть бути викликані та виконувати певні дії.</li>
+                            <li><span class="day__word-mark">Null та undefined</span> - це спеціальні значення, що вказують на відсутність значення.</li>
                         </ol>
-                    </p>
                     <p class="narration__paragraph">Ці типи даних дозволяють програмістам виконувати різні операції з даними, що є важливим для написання різноманітних програм.</p>`,
         codeExamples: ''
     },
@@ -43,13 +41,11 @@ const DATABASEDAYS = [
         level: 'elementary',
         title: 'Оператори у JavaScript арифметичні, порівняння, логічні',
         narration: `<p class="narration__paragraph">В JavaScript є кілька видів операторів, які використовуються для різних операцій з даними. Оператори дозволяють обробляти значення, порівнювати їх, здійснювати логічні дії та багато іншого. Давайте розглянемо декілька основних типів операторів у JavaScript:</p>
-                    <p class="narration__paragraph">
-                        <ol>
+                        <ol class="narration__paragraph">
                             <li>Арифметичні оператори - ці оператори використовуються для виконання арифметичних операцій, таких як додавання, віднімання, множення та ділення. Наприклад, + додає два числа, - віднімає одне число від іншого, * множить два числа, а / ділить одне число на інше.li>
                             <li>Оператори порівняння - ці оператори використовуються для порівняння двох значень. Наприклад, == перевіряє, чи дорівнюють два значення, а != перевіряє, чи не дорівнюють вони. >, <, >= та <= порівнюють числові значення, а === та !== порівнюють не тільки значення, але і тип даних.</li>
                             <li>Логічні оператори - ці оператори використовуються для здійснення логічних операцій над значеннями. && (логічне І) повертає true, якщо обидва значення true, || (логічне АБО) повертає true, якщо хоча б одне значення true, а ! (логічне НЕ) змінює значення на протилежне.</li>
                         </ol>
-                    </p>
                     <p class="narration__paragraph">Знання цих типів операторів дозволить вам створювати складніші програми в JavaScript та здійснювати різні маніпуляції з даними. Наприклад, ви можете використовувати логічні оператори, щоб перевірити, чи має користувач відповідний доступ до деякої інформації, або використовувати арифметичні оператори, щоб обчислити значення певних математичних виразів.</p>`,
         codeExamples: ''
     },
@@ -94,11 +90,11 @@ const DATABASEDAYS = [
         day: 8,
         level: 'elementary',
         title: 'Тип данних масив (Array)',
-        narration: `<p class="narration__paragraph">Перед посатком вивчення мавивів, я розумів, що масиви є одним з найважливіших елементів в Javascript, тому я почав вивчати їх з особливим інтузіазмом.</p>
+        narration: `<p class="narration__paragraph">Перед початком вивчення мавивів, я розумів, що масиви є одним з найважливіших елементів в Javascript, тому я почав вивчати їх з особливим інтузіазмом.</p>
                     <p class="narration__paragraph">Спочатку я зрозумів, що масив - це збірник значень, які можуть бути збережені в одному місці. Я створив кілька простих масивів, щоб побачити, як вони працюють. Я використовував оператори, такі як push, pop, shift та unshift, щоб додавати та видаляти елементи з масиву. Це допомогло мені краще зрозуміти, як вони працюють.</p>
-                    <p class="narration__paragraph">push, pop, shift та unshift - це методи, які дозволяють додавати та видаляти елементи з масиву в Javascript. Метод push додає елемент в кінець масиву, метод pop видаляє останній елемент з масиву, метод shift видаляє перший елемент з масиву, а метод unshift додає елемент на початок масиву.</p>
+                    <p class="narration__paragraph"><span class="day__word-mark">push, pop, shift та unshift</span> - це методи, які дозволяють додавати та видаляти елементи з масиву в Javascript. Метод push додає елемент в кінець масиву, метод pop видаляє останній елемент з масиву, метод shift видаляє перший елемент з масиву, а метод unshift додає елемент на початок масиву.</p>
                     <p class="narration__paragraph">Я також вивчив, як отримувати доступ до елементів масиву за індексом та як проходити через масив в циклі. Я використовував метод forEach для перебору масиву та виконання певних дій з кожним елементом.</p>
-                    <p class="narration__paragraph">forEach - це метод, який використовується для перебору елементів масиву та виконання певної дії з кожним елементом. Метод forEach приймає функцію зворотного виклику (callback function), яка виконується для кожного елемента масиву. Функція зворотного виклику приймає три аргументи: поточний елемент масиву, індекс поточного елемента та сам масив.</p>
+                    <p class="narration__paragraph"><span class="day__word-mark">forEach</span> - це метод, який використовується для перебору елементів масиву та виконання певної дії з кожним елементом. Метод forEach приймає функцію зворотного виклику (callback function), яка виконується для кожного елемента масиву. Функція зворотного виклику приймає три аргументи: поточний елемент масиву, індекс поточного елемента та сам масив.</p>
                     <p class="narration__paragraph">Після того, як я зрозумів основні концепції масивів, я перейшов до більш складних завдань. Я досліджував, як створювати багатовимірні масиви та як виконувати операції з масивами, такі як сортування та фільтрація.</p>
                     <p class="narration__paragraph">На моє задоволення, я зрозумів, що Javascript надає багато функцій для роботи з масивами. Я вивчив, як використовувати методи, такі як map, reduce та filter, щоб більш ефективно працювати з масивами.</p>
                     <p class="narration__paragraph">Хоча це було викликом для мене вивчити масиви в Javascript, я був задоволений своїм прогресом. Я відчував, що зрозумів основні концепції масивів та зміг застосовувати їх у своїх проектах. Я з нетерпінням чекаю на наступні виклики, які принесе мій шлях навчання.</p>`,
@@ -115,8 +111,78 @@ const DATABASEDAYS = [
     },
     {
         day: 10,
-        level: '',
-        title: '',
+        level: 'base',
+        title: 'Що таке мотоди?',
+        narration: ``,
+        codeExamples: ''
+    },
+    {
+        day: 11,
+        level: 'base',
+        title: 'if',
+        narration: ``,
+        codeExamples: ''
+    },
+    {
+        day: 12,
+        level: 'base',
+        title: 'Оператор switch',
+        narration: ``,
+        codeExamples: ''
+    },
+    {
+        day: 13,
+        level: 'base',
+        title: 'Двовимірні масиви',
+        narration: ``,
+        codeExamples: ''
+    },
+    {
+        day: 14,
+        level: 'base',
+        title: 'Функції',
+        narration: ``,
+        codeExamples: ''
+    },
+    {
+        day: 15,
+        level: 'base',
+        title: 'Цикли for, while',
+        narration: ``,
+        codeExamples: ''
+    },
+    {
+        day: 16,
+        level: 'base',
+        title: 'Що таке DOM',
+        narration: ``,
+        codeExamples: ''
+    },
+    {
+        day: 17,
+        level: 'base',
+        title: 'Робота з DOM',
+        narration: ``,
+        codeExamples: ''
+    },
+    {
+        day: 18,
+        level: 'advanced',
+        title: 'Про фреймворки',
+        narration: ``,
+        codeExamples: ''
+    },
+    {
+        day: 19,
+        level: 'advanced',
+        title: 'Модальні вікна',
+        narration: ``,
+        codeExamples: ''
+    },
+    {
+        day: 20,
+        level: 'advanced',
+        title: 'Асинхронні функції',
         narration: ``,
         codeExamples: ''
     },
@@ -127,8 +193,14 @@ const narration = document.querySelector('.narration');
 const headerDay = document.querySelector('.header__day');
 const titleWebsite = document.querySelector('.title__website');
 const elementaryDays = document.querySelector('.elementary-days');
+const baseDays = document.querySelector('.base-days');
+const advancedDays = document.querySelector('.advanced-days');
+const narrationTitle = document.querySelector('.narration__title');
+const backPageButton = document.querySelector('.back-page');
+const nextPageButton = document.querySelector('.next-page');
 
 dayToIndex = 0;
+stateDay = 0;
 
 
 
@@ -144,11 +216,12 @@ function loadDayPage(){
     for(let key in DATABASEDAYS){
         if(key == dayToIndex){
             narration.innerHTML += `
-                    ${DATABASEDAYS[key].narration}
-                    ${DATABASEDAYS[key].codeExamples}
-                `
-            headerDay.innerHTML += `${DATABASEDAYS[key].title}`
+                ${DATABASEDAYS[key].narration}
+                ${DATABASEDAYS[key].codeExamples}`
+            narrationTitle.innerHTML += `${DATABASEDAYS[key].title}`
+            headerDay.innerHTML += `${DATABASEDAYS[key].day}`
             titleWebsite.innerHTML += `JS DAYS - ${DATABASEDAYS[key].title}`
+            stateDay = Number(key);
         };
     };
 };
@@ -167,15 +240,6 @@ function loadDayList(){
 
 // Функція загрузки таблиці днів в щоденнику
 function loadTableDay(){
-    // for (let key in DATABASEDAYS){
-    //     diaryList.innerHTML += `
-    //         <div class="diary-item">
-    //             <a onclick="getDay(this)" data-day="${DATABASEDAYS[key].day}" href="day.html" class="day">${DATABASEDAYS[key].day}<pre><span> день</span></pre></a>
-    //             <div class="description">${DATABASEDAYS[key].title}</div>
-    //         </div>
-    //     `
-    // };
-
     for(let key in DATABASEDAYS){
         if(DATABASEDAYS[key].level == "elementary"){
             elementaryDays.innerHTML += `
@@ -183,6 +247,58 @@ function loadTableDay(){
                     <a onclick="getDay(this)" data-day="${DATABASEDAYS[key].day}" href="day.html" class="day">${DATABASEDAYS[key].day}<pre><span> день</span></pre></a>
                 </div>
             `
+        }else if(DATABASEDAYS[key].level == "base"){
+            baseDays.innerHTML += `
+                <div class="day__block">
+                    <a onclick="getDay(this)" data-day="${DATABASEDAYS[key].day}" href="day.html" class="day">${DATABASEDAYS[key].day}<pre><span> день</span></pre></a>
+                </div>
+            `
+        }else if(DATABASEDAYS[key].level == "advanced"){
+            advancedDays.innerHTML += `
+                <div class="day__block">
+                    <a onclick="getDay(this)" data-day="${DATABASEDAYS[key].day}" href="day.html" class="day">${DATABASEDAYS[key].day}<pre><span> день</span></pre></a>
+                </div>
+            `
         };
+    };
+};
+
+// Функція минулої сторінки
+function backPage(elem){    
+    stateDay--;
+    console.log(stateDay);
+
+    if(stateDay <= -1){
+        stateDay++;
+        elem.style.background = "#9088FF";
+    }else{
+        narration.innerHTML = `
+            ${DATABASEDAYS[stateDay].narration}
+            ${DATABASEDAYS[stateDay].codeExamples}`
+        narrationTitle.innerHTML = `${DATABASEDAYS[stateDay].title}`
+        headerDay.innerHTML = `${DATABASEDAYS[stateDay].day}`
+        titleWebsite.innerHTML = `JS DAYS - ${DATABASEDAYS[stateDay].title}`
+        backPageButton.style.background = "var(--main)";
+        nextPageButton.style.background = "var(--main)";
+    };
+};
+
+// Функція наступної сторінки
+function nextPage(elem){    
+    stateDay++;
+    console.log(stateDay);
+
+    if(stateDay >= 19){
+        stateDay--;
+        elem.style.background = "#9088FF";
+    }else{
+        narration.innerHTML = `
+        ${DATABASEDAYS[stateDay].narration}
+        ${DATABASEDAYS[stateDay].codeExamples}`
+        narrationTitle.innerHTML = `${DATABASEDAYS[stateDay].title}`
+        headerDay.innerHTML = `${DATABASEDAYS[stateDay].day}`
+        titleWebsite.innerHTML = `JS DAYS - ${DATABASEDAYS[stateDay].title}`
+        backPageButton.style.background = "var(--main)";
+        nextPageButton.style.background = "var(--main)";
     };
 };

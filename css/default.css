@@ -32,7 +32,9 @@ button, p, a {
     --dark65: #212121a6;
 
     --main: #6358FF;
+    --darkmain: #5045ec;
     --main35: #6257ff59;
+    --main25: #6257ff40;
     --main50: #6257ff80;
     --main3: #6257ff08;
 }

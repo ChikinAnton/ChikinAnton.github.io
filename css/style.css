@@ -62,25 +62,28 @@
     height: 600px;
     margin: 0 auto;
     margin-top: 110px;
-    border-radius: 20px;
+    border-radius: 30px;
     display: flex;
     justify-content: center;
     text-align: center;
     padding-top: 150px;
 }
 
-.header__logo a {
+.header__logo a,
+.footer__logo a {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 25px;
+    font-size: 23px;
     line-height: 40px;
     letter-spacing: 0.1em;
     text-transform: lowercase;
-    font-family: 'Baloo Bhai 2';
+    font-family: 'Poppins';
+    text-transform: uppercase;
 }
 
-.header__logo img {
+.header__logo img,
+.footer__logo img {
     height: 40px;
 }
 
@@ -725,7 +728,7 @@
 */
 
 .frameworks {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 .frameworks__container {
@@ -832,6 +835,78 @@
 
 
 /* 
+    Підвал
+*/
+
+footer {
+    
+}
+
+.footer__line {
+    display: flex;
+    padding: 100px 0 30px 0;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.footer__nav {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer__nav a {
+    color: var(--dark65);
+    transition: 0.2s;
+}
+
+.footer__nav a:hover {
+    color: var(--dark);
+}
+
+.footer__contact {
+    display: flex;
+    gap: 15px;
+}
+
+.footer__rights {
+    width: 100%;
+    padding-top: 25px;
+    margin-bottom: 70px;
+    text-align: center;
+    position: relative;
+}
+
+.footer__rights::before {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: var(--main25);
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.footer__rights .rights {
+    color: var(--dark65);
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/* Адаптація */
+
+@media screen and (max-width: 768px) {
+    .footer__line {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+/* 
     Шапка щоденника
 */
 
@@ -917,23 +992,21 @@
 */
 
 .header__day {
-    background: linear-gradient(257.16deg, #EEEEFA 0%, #CECEFC 22.92%, #DDE2F6 47.92%, #CBEAFC 72.4%, #DAEDFC 100%);
-    /* background: var(--main); */
-    color: var(--main);
+    /* background: linear-gradient(257.16deg, #EEEEFA 0%, #CECEFC 22.92%, #DDE2F6 47.92%, #CBEAFC 72.4%, #DAEDFC 100%); */
+    background: var(--main);
+    color: var(--white85);
     height: 400px;
+    width: clamp(200px, 90%, 400px);
     margin: 0 auto;
     margin-top: 110px;
     margin-bottom: 120px;
     padding: 20px;
-    border-radius: 30px;
+    border-radius: 37% 63% 37% 63% / 52% 31% 69% 48% ;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
-    text-transform: uppercase;
-    font-weight: bold;
-    width: 90%;
-    text-align: center;
+    font-size: 120px;
+    font-weight: 700;
 }
 
 /* 
@@ -942,13 +1015,14 @@
 
 @media screen and (max-width: 768px) {
     .header__day {
-        font-size: 32px;
+        font-size: 120px;
     }
 }
 
 @media screen and (max-width: 375px) {
     .header__day {
-        font-size: 24px;
+        font-size: 90px;
+        height: 300px;
     }
 }
 
@@ -960,15 +1034,75 @@
 .narration {
     display: flex;
     flex-direction: column;
+    border: 1px solid #E4E2FF;
+    border-radius: 40px;
+    padding: 30px 30px;
+    margin-bottom: 30px;
+}
+
+.narration__title {
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
 .narration__paragraph {
     margin-bottom: 30px;
     text-align: justify;
+    line-height: 140%;
+}
+
+.narration__paragraph li {
+    margin-left: 35px;
 }
 
 .code__examples {
     width: 100%;
-    max-width: 1000px;
     align-self: center;
+}
+
+.day__word-mark {
+    background: var(--main);
+    color: var(--white85);
+    padding: 2px 5px;
+}
+
+/* 
+    Адаптація
+*/
+
+@media screen and (max-width: 1024px) {
+    .narration {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+
+/* 
+    Стилі кнопок навігації між сторінками
+*/
+
+.page__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.page__buttons button {
+    border-radius: 17px;
+    background: var(--main);
+    color: var(--white);
+    font-weight: 500;
+    line-height: 19px;
+    padding: 13px 40px;
+    transition: 0.2s;
+}
+
+.page__buttons button:hover {
+    cursor: pointer;
+    background: var(--darkmain);
 }

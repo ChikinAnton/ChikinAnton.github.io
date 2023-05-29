@@ -32,6 +32,19 @@
 
 </head>
 <body>
+    <!-- 
+        Навігація для мобілок
+     -->
+    <div class="navigation__window">
+        <div class="line">
+            <img onclick="mobileMenu()" class="close" src="img/close-icon.svg">
+        </div>
+        <div class="menu">
+            <a href="index.html" class="active">Головна</a>
+            <a href="diary.html">Щоденник</a>
+            <a href="">Вебсайт</a>
+        </div>
+    </div>
 
     <!-- 
         Шапка
@@ -45,9 +58,10 @@
                 <nav class="nav">
                     <a href="index.html" class="nav__item active">Головна</a>
                     <a href="diary.html" class="nav__item">Щоденник</a>
-                    <a href="#" class="nav__item">Колекція робіт</a>
+                    <!-- <a href="#" class="nav__item">Колекція робіт</a> -->
                     <a href="#" class="nav__item website">Вебсайт</a>
                 </nav>
+                <img onclick="mobileMenu()" src="img/menu-icon.svg">
             </div>
             <div class="header__content">
                 <div class="header__container">
@@ -192,13 +206,13 @@
                             <div class="frameworks__items">
 
                                 <div class="frameworks__item">
-                                    <img src="./img/vue-icon.png" alt="vue.js" class="fw__img">
+                                    <img src="img/vue-icon.png" alt="vue.js" class="fw__img">
                                     <p class="fw__title">Vue.js</p>
                                     <p class="fw__description">Працює на базі звичайного HTML, CSS та JavaScript, з можливостями декларативно програмувати користувацькі інтерфейси будь-якої складності на основі компонентів.</p>
                                 </div>
 
                                 <div class="frameworks__item">
-                                    <img src="./img/react-icon.png" alt="react" class="fw__img">
+                                    <img src="img/react-icon.png" alt="react" class="fw__img">
                                     <p class="fw__title">react</p>
                                     <p class="fw__description">Використовується для створення сучасних інтерфейсів сайтів. Розвивається за підтримки Instagram і великого співтовариства розробників.</p>
                                 </div>
@@ -208,13 +222,13 @@
                             <div class="frameworks__items">
 
                                 <div class="frameworks__item">
-                                    <img src="./img/angular-icon.png" alt="angular" class="fw__img">
+                                    <img src="img/angular-icon.png" alt="angular" class="fw__img">
                                     <p class="fw__title">Angular</p>
                                     <p class="fw__description">Використовується для розробки складних сайтів та веб-систем, а також додатків для iOS та Android, як основа технології Ionic.</p>
                                 </div>
 
                                 <div class="frameworks__item">
-                                    <img src="./img/node_js-icon.png" alt="node.js" class="fw__img">
+                                    <img src="img/node_js-icon.png" alt="node.js" class="fw__img">
                                     <p class="fw__title">Node.js</p>
                                     <p class="fw__description">Платформа була створена для швидких мережевих застосунків, які легко масштабувати.</p>
                                 </div>
@@ -223,7 +237,7 @@
                         </div>
                     </div>
                     <div class="frameworks__right">
-                        <img class="frameworks__right-img" src="./img/frameworks-img.jpg" alt="">
+                        <img class="frameworks__right-img" src="img/frameworks-img.jpg" alt="">
                     </div>
                 </div>
             </div>

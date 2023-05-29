@@ -32,6 +32,19 @@
     
     </head>
 <body>
+    <!-- 
+        Навігація для мобілок
+    -->
+    <div class="navigation__window">
+        <div class="line">
+            <img onclick="mobileMenu()" class="close" src="img/close-icon.svg">
+        </div>
+        <div class="menu">
+            <a href="index.html">Головна</a>
+            <a href="diary.html" class="active">Щоденник</a>
+            <a href="">Вебсайт</a>
+        </div>
+    </div>
     
     <!-- 
         Шапка
@@ -48,6 +61,7 @@
                     <a href="#" class="nav__item">Колекція робіт</a>
                     <a href="#" class="nav__item website">Вебсайт</a>
                 </nav>
+                <img onclick="mobileMenu()" src="img/menu-icon.svg">
             </div>
             <div class="header__day"></div>
         </div>
@@ -57,7 +71,6 @@
         Основний контент
      -->
     <main class="main">
-
         <!-- 
             Розповідь дня
          -->

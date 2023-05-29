@@ -14,19 +14,19 @@
     <!--
         Шрифти
      -->
-    <link rel="preload" href="./fonts/sofia-sans-v13-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="./fonts/sofia-sans-v13-latin_cyrillic-600.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="./fonts/sofia-sans-v13-latin_cyrillic-800.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="./fonts/baloo-bhai-2-v21-latin-800.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/sofia-sans-v13-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/sofia-sans-v13-latin_cyrillic-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/sofia-sans-v13-latin_cyrillic-800.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/poppins-v20-latin-600.woff2" as="font" type="font/woff2" crossorigin>
 
     <!-- 
         Іконка
      -->
-     <link rel="apple-touch-icon" sizes="180x180" href="./img/icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/icon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="./img/icon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="img/icon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#603cba">
     <meta name="theme-color" content="#ffffff">
 
@@ -40,7 +40,7 @@
         <div class="line__container">
             <div class="header__line">
                 <div class="header__logo">
-                    <a href="./index.html"><img src="img/logo.png" alt="JS DAYS"> days</a>
+                    <a href="index.html"><img src="img/logo.png" alt="JS DAYS"> days</a>
                 </div>
                 <nav class="nav">
                     <a href="index.html" class="nav__item active">Головна</a>
@@ -53,9 +53,9 @@
                 <div class="header__container">
                     <h1 class="header__title">Твій помічник</h1>
                     <p class="header__subtitle">У вивчені JavaScript</p>
-                    <div class="header__button">
+                    <a href="diary.html" class="header__button">
                         <button>Розпочни своє навчання</button>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="container">
@@ -129,9 +129,9 @@
                 <p class="banner__title">
                     Це час для вашого саморозвитку, почніть вивчати JavaScript прямо зараз
                 </p>
-                <div class="banner__button">
+                <a href="diary.html" class="banner__button">
                     <button>Почати</button>
-                </div>
+                </a>
             </div>
         </div>
 
@@ -173,9 +173,9 @@
             <div class="banner__2">
                 <p class="banner__title">Просто почніть вивчати JavaScript всього в один клік</p>
                 <p class="banner__subtitle">Прості та змістовні пояснення в наших матеріалах для вашого конфортного вивчення</p>
-                <div class="banner__button">
+                <a href="diary.html" class="banner__button">
                     <button>Почати</button>
-                </div>
+                </a>
             </div>
         </div>
 
@@ -235,7 +235,31 @@
         Підвал 
     -->
     <footer class="footer">
-
+        <div class="container">
+            <div class="footer__line">
+                <div class="footer__logo"><a href="index.html"><img src="img/logo.png" alt="JS DAYS"> days</a></div>
+                <div class="footer__nav">
+                    <a href="index.html">Головна</a>
+                    <a href="diary.html">Щоденник</a>
+                    <a href="">Колекція робіт</a>
+                    <a href="">Вебсайт</a>
+                </div>
+                <div class="footer__contact">
+                    <a target="_blank" href="https://www.instagram.com/a.chikinn/">
+                        <img src="img/instagram-icon.svg">
+                    </a>
+                    <a href="mailto:anton.chickin@gmail.com">
+                        <img src="img/email-icon.svg">
+                    </a>
+                    <a target="_blank" href="https://www.t.me/ytgpub">
+                        <img src="img/telegram-icon.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__rights">
+                <p class="rights">© 2023 Всі права захищені</p>
+            </div>
+        </div>
     </footer>
 
     <!-- 

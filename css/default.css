@@ -20,26 +20,41 @@ button, p, a {
     scroll-behavior: smooth;
 }
 
-/* Кольори */
+
+/*
+    Змінні
+*/
 
 :root {
+    /* Білий */
     --white: #fff;
     --white85: #ffffffd9;
-    
-    --black: #000;
 
+    /* Світлий */
+    --mainLight: #E4E2FF;
+    --mainLight75: hsla(244, 100%, 94%, 0.750);
+    
+    /* Чорний */
+    --black: #000;
+    
+    /* Темний */
     --dark: #212121;
     --dark65: #212121a6;
-
+    --parallaxMain: #191734;
+    
+    /* Основний */
     --main: #6358FF;
     --darkmain: #5045ec;
     --main35: #6257ff59;
     --main25: #6257ff40;
     --main50: #6257ff80;
     --main3: #6257ff08;
+
+    /* Індекси */
+    --index: calc(1vh + 1vw);
+    --technologies-gap: calc(var(--index) * 10)
 }
 
-/* Кінець кольорів */
 
 .container {
     max-width: 1250px;
@@ -61,7 +76,7 @@ button, p, a {
     font-weight: 700;
     font-size: 24px;
     text-transform: capitalize;
-    color: #000000;
+    color: var(--black);
     margin-bottom: 80px;
 }
 

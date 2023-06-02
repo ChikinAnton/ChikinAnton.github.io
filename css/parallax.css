@@ -1,0 +1,118 @@
+body {
+    background: var(--parallaxMain);
+    overflow-x: hidden;
+    color: var(--mainLight);
+}
+
+/* will-change */
+.website-content, .hero, .main-header, .technologies__left, .technologies__right {
+    will-change: transform;
+}
+
+h1, h2, p {
+    color: var(--mainLight);
+}
+
+.header-section img {
+    width: calc(var(--index) * 30);
+    position: absolute;
+    left: 46vw;
+    top: 14vh;
+}
+
+.website-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+    padding-top: 3vh;
+}
+
+.nav-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(25, 23, 52, 0.8);
+    border: 1px solid #373183;
+    backdrop-filter: blur(10px);
+    border-radius: 60px;
+}
+
+.nav-item {
+    color: var(--mainLight);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    padding: 15px 50px;
+    border-radius: 100px;
+    transition: 0.2s;
+}
+
+.nav-item:nth-child(1) {border-radius: 100px 0 0 100px; padding-right: 30px;}
+.nav-item:nth-child(2) {border-radius: 0 100px 100px 0; padding-left: 30px;}
+
+.nav-item:hover {
+    background: rgb(23, 21, 49);
+}
+
+.container-section {
+    padding: 0 10vw;
+}
+
+.main-header {
+    height: 100vh;
+}
+
+.main-title {
+    font-size: calc(var(--index) * 7);
+    line-height: 75%;
+    letter-spacing: 3px;
+    font-variant: all-small-caps;
+    position: relative;
+    top: 55vh;
+    font-weight: 700;
+}
+
+.technologies {
+    display: flex;
+    padding-top: 35vh;
+}
+
+.technologies > * {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.technologies__left {
+    padding-top: calc(var(--technologies-gap) * .5);
+}
+
+.technologies__item {
+    max-width: calc(var(--index) * 21);
+    margin-bottom: calc(var(--technologies-gap) * 1);
+}
+
+.text-block {
+    letter-spacing: 0.1em;
+    position: relative;
+    font-weight: 400;
+}
+
+.text-block__h {
+    font-family: 'rum raisin';
+    /* font-size: calc(var(--index) * 6); */
+    font-size: 8rem;
+}
+
+.text-block__p {
+    color: var(--mainLight75);
+}
+
+#css-img {
+    position: relative;
+    top: 180px;
+    margin-bottom: calc(var(--technologies-gap) * 2);
+}

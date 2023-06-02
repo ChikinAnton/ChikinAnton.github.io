@@ -15,7 +15,7 @@
     height: 100%;
     position: fixed;
     top: 0;
-    left: -400px;
+    left: -100%;
     background: rgba(255, 255, 255, 0.74);
     backdrop-filter: blur(15px);
     z-index: 1001;
@@ -59,6 +59,15 @@
 
 .nav-active {
     display: block;
+}
+
+/* Адаптація */
+
+@media screen and (min-width: 769px) {
+    .navigation__window,
+    .header__menu {
+        display: none;
+    }
 }
 
 
@@ -978,10 +987,12 @@ footer {
     margin-top: 110px;
     width: 90%;
     margin-bottom: 120px;
+    max-width: 1240px;
 }
 
 .header__diary .text {
     min-width: 300px;
+    flex: 2;
 }
 
 .header__diary .subtitle__text {
@@ -1001,6 +1012,7 @@ footer {
     width: 600px;
     min-width: 300px;
     object-fit: cover;
+    flex: 3;
 }
 
 /* 

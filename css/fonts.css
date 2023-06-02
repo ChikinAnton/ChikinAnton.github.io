@@ -1,6 +1,6 @@
 /* sofia-sans-regular - latin_cyrillic */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
     font-family: 'Sofia Sans';
     font-style: normal;
     font-weight: 400;
@@ -10,7 +10,7 @@
 }
   /* sofia-sans-600 - latin_cyrillic */
   @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
     font-family: 'Sofia Sans';
     font-style: normal;
     font-weight: 600;
@@ -20,7 +20,7 @@
   }
   /* sofia-sans-800 - latin_cyrillic */
   @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
     font-family: 'Sofia Sans';
     font-style: normal;
     font-weight: 800;
@@ -31,7 +31,7 @@
 
 /* poppins-600 - latin */
 @font-face {
-     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+     font-display: swap;
      font-family: 'Poppins';
      font-style: normal;
      font-weight: 600;
@@ -41,4 +41,12 @@
           url('../fonts/poppins-v20-latin-600.woff') format('woff'), /* Modern Browsers */
           url('../fonts/poppins-v20-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
           url('../fonts/poppins-v20-latin-600.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+/* rum-raisin-regular - latin */
+@font-face {
+     font-display: swap;
+     font-family: 'Rum Raisin';
+     font-style: normal;
+     font-weight: 400;
+     src: url('../fonts/rum-raisin-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }

@@ -240,7 +240,7 @@ function loadDayList(){
             </div>
         `
     };
-}
+};
 
 // Функція загрузки таблиці днів в щоденнику
 function loadTableDay(){
@@ -310,13 +310,10 @@ function nextPage(elem){
 // Функція для відображення мобільного меню
 function mobileMenu(){
     if(menu == false){
-        // menuWindow.classList.add('nav-active');
         menuWindow.style.left = "0";
-
         menu = true;
     }else if(menu == true){
-        // menuWindow.classList.remove('nav-active');
-        menuWindow.style.left = "-400px";
+        menuWindow.style.left = "-100%";
         menu = false;
     };
 };

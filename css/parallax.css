@@ -137,7 +137,7 @@ h1, h2, p {
     .main-title {
         font-size: calc(var(--index) * 7);
         text-align: center;
-        top: 25vh;
+        top: 35vh;
     }
 
     .container-section {
@@ -153,6 +153,7 @@ h1, h2, p {
 
     .technologies {
         flex-direction: column;
+        padding-top: 0;
     }
 
     .technologies__item {

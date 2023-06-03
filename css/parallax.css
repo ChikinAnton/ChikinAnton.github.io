@@ -16,8 +16,8 @@ h1, h2, p {
 .header-section img {
     width: calc(var(--index) * 30);
     position: absolute;
-    left: 46vw;
-    top: 14vh;
+    left: 50vw;
+    top: 24vh;
 }
 
 .website-nav {
@@ -43,6 +43,7 @@ h1, h2, p {
     color: var(--mainLight);
     text-transform: uppercase;
     letter-spacing: 0.1rem;
+    font-size: 1rem;
     font-weight: 600;
     padding: 15px 50px;
     border-radius: 100px;
@@ -70,13 +71,14 @@ h1, h2, p {
     letter-spacing: 3px;
     font-variant: all-small-caps;
     position: relative;
-    top: 55vh;
+    top: 50vh;
     font-weight: 700;
 }
 
 .technologies {
     display: flex;
     padding-top: 35vh;
+    gap: calc(var(--technologies-gap) * .2);
 }
 
 .technologies > * {
@@ -96,23 +98,97 @@ h1, h2, p {
 }
 
 .text-block {
-    letter-spacing: 0.1em;
     position: relative;
     font-weight: 400;
 }
 
 .text-block__h {
     font-family: 'rum raisin';
-    /* font-size: calc(var(--index) * 6); */
     font-size: 8rem;
+    letter-spacing: 0.1em;
 }
 
 .text-block__p {
     color: var(--mainLight75);
+    letter-spacing: 0.1em;
 }
 
 #css-img {
     position: relative;
     top: 180px;
     margin-bottom: calc(var(--technologies-gap) * 2);
+}
+
+@media screen and (max-width: 768px) {
+    .header-section {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .header-section img {
+        max-width: 75%;
+        position: relative;
+        left: 0;
+        top: 17vh;
+        margin: 0 auto;
+    }
+
+    .main-title {
+        font-size: calc(var(--index) * 7);
+        text-align: center;
+        top: 25vh;
+    }
+
+    .container-section {
+        width: 100%;
+    }
+
+    .nav-item {
+        padding: 15px 35px;
+    }
+
+    .nav-item:nth-child(1) {padding-right: 15px;}
+    .nav-item:nth-child(2) {padding-left: 15px;}
+
+    .technologies {
+        flex-direction: column;
+    }
+
+    .technologies__item {
+        max-width: 100%;
+    }
+
+    .technologies img {
+        width: 50vw;
+        margin-bottom: calc(var(--technologies-gap) * .3);
+    }
+    
+    .text-block__h {
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .main-title {
+        font-size: calc(var(--index) * 6);
+    }
+    
+    .nav-item {
+        padding: 13px 35px;
+        font-size: .8rem;
+    }
+
+    .technologies img {
+        width: 100%;
+    }
+
+    .text-block__h {
+        font-size: 6.5rem;
+    }
+
+    .text-block {
+        margin-bottom: 150px;
+    }
 }

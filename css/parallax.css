@@ -168,6 +168,12 @@ h1, h2, p {
     .text-block__h {
         text-align: center;
     }
+
+    .technologies-html,
+    .technologies-css,
+    .technologies-js {
+        position: relative;
+    }
 }
 
 
@@ -182,11 +188,11 @@ h1, h2, p {
     }
 
     .technologies img {
-        width: 100%;
+        width: 90%;
     }
 
     .text-block__h {
-        font-size: 6.5rem;
+        font-size: 6rem;
     }
 
     .text-block {

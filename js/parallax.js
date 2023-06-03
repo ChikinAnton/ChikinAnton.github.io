@@ -85,4 +85,64 @@ if(ScrollTrigger.isTouch !== 1){
     </div>
 </div>
     `
+
+    ScrollSmoother.create({
+        wrapper: '.wrapper',
+        content: '.website-content',
+        smooth: 1.5,
+        effects: true
+    })
+
+    gsap.fromTo('.header-section', { opacity: 1 }, {
+		opacity: 0,
+		scrollTrigger: {
+			trigger: '.header-section',
+			start: 'center',
+			end: '820',
+			scrub: true
+		}
+	})
+
+    let itemsHTML = gsap.utils.toArray('.technologies-html .technologies__item')
+
+	itemsHTML.forEach(item => {
+		gsap.fromTo(item, { opacity: 0, x: -75 }, {
+			opacity: 1, x: 0,
+			scrollTrigger: {
+				trigger: item,
+				start: '-850',
+				end: '-100',
+				scrub: true
+			}
+		})
+	})
+
+    let itemsCSS = gsap.utils.toArray('.technologies-css .technologies__item')
+
+	itemsCSS.forEach(item => {
+		gsap.fromTo(item, { opacity: 0, x: 
+            75 }, {
+			opacity: 1, x: 0,
+			scrollTrigger: {
+				trigger: item,
+				start: '-850',
+				end: '-100',
+				scrub: true
+			}
+		})
+	})
+
+    let itemsJS = gsap.utils.toArray('.technologies-js .technologies__item')
+
+	itemsJS.forEach(item => {
+		gsap.fromTo(item, { opacity: 0, x: -75 }, {
+			opacity: 1, x: 0,
+			scrollTrigger: {
+				trigger: item,
+				start: '-850',
+				end: '-100',
+				scrub: true
+			}
+		})
+	})
 }

@@ -63,12 +63,11 @@ button, p, a {
 }
 
 .title__text {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 15px;
-    color: #6358FF;
+    font-size: 16px;
+    color: var(--white);
+    background: var(--main);
     text-transform: uppercase;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .subtitle__text {

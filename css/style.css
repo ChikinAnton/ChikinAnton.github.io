@@ -297,14 +297,9 @@
 }
 
 .title__text {
-    margin-bottom: 5px;
-    color: var(--white);
     font-weight: 600;
-    font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.1em;
-    text-transform: uppercase;
-    background: var(--main);
     padding: 10px 25px;
     border-radius: 15px;
     width: min-content;
@@ -321,7 +316,8 @@
 }
 
 .js__block .title__text {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .js__block_cards {
@@ -387,7 +383,8 @@
 }
 
 .interesting__sources .title__text{
-    margin: 0px auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .sources__scroll {
@@ -676,7 +673,8 @@
 }
 
 .advances .title__text {
-    margin: 0 auto; 
+    margin-left: auto;
+    margin-right: auto; 
 }
 
 .advances__content {
@@ -866,7 +864,8 @@
 
 @media screen and (max-width: 768px) {
     .frameworks .title__text {
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .frameworks__item p {
@@ -1104,40 +1103,45 @@ footer {
     Стилі розказу
 */
 
-.narration {
+.lecture {
     display: flex;
     flex-direction: column;
     border: 1px solid #E4E2FF;
     border-radius: 40px;
-    padding: 30px 30px;
+    /* padding: 30px 30px; */
+    padding: 0;
     margin-bottom: 30px;
 }
 
-.narration__title {
+.lecture__title {
     text-align: center;
     margin-bottom: 30px;
     text-transform: uppercase;
 }
 
-.narration__paragraph {
-    margin-bottom: 30px;
+.lecture__paragraph {
+    margin: 30px;
     text-align: justify;
-    line-height: 140%;
+    line-height: 200%;
 }
 
-.narration__paragraph li {
+.lecture__paragraph li {
     margin-left: 35px;
 }
 
-.code__examples {
-    width: 100%;
-    align-self: center;
-}
-
-.day__word-mark {
+.lecture-mark {
     background: var(--main);
     color: var(--white85);
-    padding: 2px 5px;
+    padding: 1px 8px;
+    margin: 0 2px;
+    border-radius: 5px;
+}
+
+.code__exemple {
+    background: #F6F5FC;
+    padding: 30px;
+    font-size: 16px;
+    white-space:break-spaces;
 }
 
 /* 
@@ -1145,7 +1149,7 @@ footer {
 */
 
 @media screen and (max-width: 1024px) {
-    .narration {
+    .lecture {
         margin-left: 10px;
         margin-right: 10px;
     }

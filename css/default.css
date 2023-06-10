@@ -64,18 +64,27 @@ button, p, a {
 
 .title__text {
     font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
     color: var(--white);
-    background: var(--main);
     text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background: var(--main);
+    width: min-content;
     margin-bottom: 10px;
+    padding: 10px 25px;
+    border-radius: 15px;
 }
 
 .subtitle__text {
-    font-style: normal;
+    font-size: 28px;
     font-weight: 700;
-    font-size: 24px;
+    font-style: normal;
+    color: var(--dark);
+    line-height: 34px;
+    letter-spacing: 0.1em;
     text-transform: capitalize;
-    color: var(--black);
+    text-align: center;
     margin-bottom: 80px;
 }
 

@@ -288,39 +288,21 @@
     javascript
 */
 
-.js__block {
+.using-js {
     margin-bottom: 120px;
+    text-align: center;
 }
 
-.js__block_text {
+.using-js__text {
     width: 100%;
 }
 
-.title__text {
-    font-weight: 600;
-    line-height: 19px;
-    letter-spacing: 0.1em;
-    padding: 10px 25px;
-    border-radius: 15px;
-    width: min-content;
-}
-
-.subtitle__text {
-    text-align: center;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 34px;
-    letter-spacing: 0.1em;
-    text-transform: capitalize;
-    color: var(--dark);
-}
-
-.js__block .title__text {
+.using-js .title__text {
     margin-left: auto;
     margin-right: auto;
 }
 
-.js__block_cards {
+.using-js__cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -328,7 +310,7 @@
     row-gap: 75px;
 }
 
-.js__card {
+.using-js-card {
     width: 260px;
     min-height: 170px;
     background-color: var(--main3);
@@ -339,13 +321,13 @@
     position: relative;
 }
 
-.js__card-img {
+.using-js__img {
     height: 60px;
     width: 60px;
     border-radius: 15px;
 }
 
-.js__card-image {
+.using-js__image {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -354,105 +336,14 @@
     left: 0px;
 }
 
-.js__card-title {
-    text-align: center;
+.using-js__title {
     font-weight: 700;
     font-size: 18px;
     margin-bottom: 5px;
 }
 
-.js__card-description {
-    text-align: center;
+.using-js__subtitle {
     color: #333333;
-}
-
-
-/* 
-    Інтересні джерела 
-*/
-
-.interesting__sources {
-    background: #F6F5FC;
-    width: 100%;
-    overflow: hidden;
-
-    min-height: 500px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    overflow: hidden;
-}
-
-.interesting__sources .title__text{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.sources__scroll {
-    width: 100%;
-}
-
-.sources__card {
-    max-width: 230px;
-    width: 230px;
-    min-width: 230px;
-    display: block;
-    height: fit-content;
-    border-radius: 20px;
-    background: #ffffff;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-}
-
-.sources__card-img img {
-    width: 100%;
-    height: 130px;
-    border-radius: 20px 20px 0 0;
-}
-
-.sources__card-text {
-    padding: 15px 20px 20px 20px;
-    width: 100%;
-}
-
-.sources__card-title {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    margin-bottom: 5px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.sources__card-source {
-    font-size: 15px;
-    color: #444444;
-}
-
-.slider__button-box {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    gap: 20px;
-    padding-top: 20px;
-}
-
-.slider__button {
-    padding: 10px 15px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px rgb(0 0 0 / 5%);
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
-}
-
-.slider__button:hover {
-    transform: translateY(-5px);
-}
-
-.slick-track {
-    display: flex;
-    gap: 50px;
-    transition: 1s;
 }
 
 
@@ -460,62 +351,94 @@
     Баннер
 */
 
-.banner__1 {
+.banner-block {
+    letter-spacing: 0.1em;
+    text-align: center;
+
     max-width: 800px;
     min-height: 200px;
-    background: #6358FF;
-    border-radius: 20px;
     margin: 0 auto;
-    padding: 30px 125px;
+    padding: 55px 15%;
+    border-radius: 30px;
+}
+
+.banner-block_purple {
+    background: #6358FF;  
     margin-bottom: 50px;
 }
 
-.banner__title {
-    color: #ffffff;
+.banner-block_gradient {
+    background: linear-gradient(259.58deg, #E9E7FB 0%, #D4D4FE 53.56%, #D4E9FA 100%); 
+    margin-bottom: 30px;
+}
+
+.banner-block__title {
+    font-size: 26px;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 34px;
-    text-align: center;
     text-transform: capitalize;
-    margin-bottom: 40px;
 }
 
-.banner__button {
-    width: 110px;
-    height: 40px;
-    background: #ffffff;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-    margin: 0 auto; 
-    cursor: pointer;
+.banner-block__title_white {
+    color: var(--white);
+    margin-bottom: 25px;
 }
 
-.banner__button button {
+.banner-block__title_black {
+    color: var(--dark);
+    margin-bottom: 10px;
+}
+
+.banner-block__subtitle {
+    color: var(--dark65);
+    margin-bottom: 15px;
+}
+
+.banner-block__button {
     font-weight: 700;
-    cursor: pointer;
+    display: block;
+    width: min-content;
+    margin: 0 auto;
+    padding: 11px 22px;
+    border-radius: 15px;
 }
+
+.banner-block__button_white {
+    background: var(--white);
+}
+
+.banner-block__button_black {
+    color: var(--white);
+    background: #3b4075;
+}
+
 
 /* Адаптація */
 
 @media screen and (max-width: 768px) {
-    .banner__1 {
-        padding: 30px 50px;
+    .banner-block {
+        padding: 45px 15%;
     }
 
-    .banner__title {
+    .banner-block__title {
         font-size: 22px;
+    }
+
+    .banner-block__subtitle {
+        font-size: 15px;
     }
 }
 
 @media screen and (max-width: 425px) {
-    .banner__1 {
-        padding: 30px 25px;
+    .banner-block {
+        padding: 30px 15%;
     }
 
-    .banner__title {
+    .banner-block__title {
         font-size: 20px;
+    }
+
+    .banner-block__subtitle {
+        font-size: 15px;
     }
 }
 
@@ -714,78 +637,6 @@
 
     .advances__text {
         font-size: 16px;
-    }
-}
-
-
-
-/* 
-    Баннер
-*/
-
-.banner__2 {
-    max-width: 800px;
-    padding: 80px 150px;
-    background: linear-gradient(259.58deg, #E9E7FB 0%, #D4D4FE 53.56%, #D4E9FA 100%);
-    border-radius: 30px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-}
-
-.banner__2 .banner__title {
-    margin-bottom: 10px;
-    color: var(--dark);
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 34px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    text-transform: capitalize;
-}
-
-.banner__subtitle {
-    color: var(--dark65);
-    text-align: center;
-    letter-spacing: 0.1em;
-    margin-bottom: 15px;
-}
-
-.banner__2 .banner__button {
-    background: #3b4075;
-    border-radius: 15px;
-}
-
-.banner__2 .banner__button button {
-    color: var(--white);
-}
-
-/* Адаптація */
-
-@media screen and (max-width: 768px) {
-    .banner__2 {
-        padding: 65px 75px;
-    }
-
-    .banner__title {
-        font-size: 22px;
-    }
-
-    .banner__subtitle {
-        font-size: 15px;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .banner__2 {
-        padding: 45px 25px;
-    }
-
-    .banner__title {
-        font-size: 20px;
-    }
-
-    .banner__subtitle {
-        font-size: 14px;
     }
 }
 
@@ -1125,8 +976,21 @@ footer {
     line-height: 200%;
 }
 
-.lecture__paragraph li {
-    margin-left: 35px;
+.lecture > ol {
+    margin: 0 30px 0 60px;
+    text-align: justify;
+    line-height: 200%;
+}
+
+.lecture ul {
+    margin: 0 0 0 30px;
+    text-align: justify;
+    line-height: 200%;
+    list-style-type: disc;
+}
+
+.lecture ul > li::marker {
+    color: var(--dark);
 }
 
 .lecture-mark {
@@ -1141,7 +1005,7 @@ footer {
     background: #F6F5FC;
     padding: 30px;
     font-size: 16px;
-    white-space:break-spaces;
+    white-space: break-spaces;
 }
 
 /* 

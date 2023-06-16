@@ -50,3 +50,5 @@
      font-weight: 400;
      src: url('../fonts/rum-raisin-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');

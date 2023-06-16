@@ -1002,6 +1002,7 @@ footer {
 }
 
 .code__exemple {
+    font-family: 'Fira Code', monospace;
     background: #F6F5FC;
     padding: 30px;
     font-size: 16px;
@@ -1016,6 +1017,12 @@ footer {
     .lecture {
         margin-left: 10px;
         margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .code__exemple {
+        font-size: 14px;
     }
 }
 

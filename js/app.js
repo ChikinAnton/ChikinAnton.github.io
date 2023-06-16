@@ -31,7 +31,6 @@ function loadDayPage(){
     for(let key in DATABASEDAYS){
         if(key == dayToIndex){
             lecture.innerHTML += `${DATABASEDAYS[key].lecture}`
-
             lectureTitle.innerHTML += `${DATABASEDAYS[key].title}`
             headerDay.innerHTML += `${DATABASEDAYS[key].day}`
             titleWebsite.innerHTML += `JS DAYS - ${DATABASEDAYS[key].title}`

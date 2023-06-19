@@ -94,7 +94,7 @@ const DATABASEDAYS = [
                 Наприклад:
             </p>
 <pre class="code__exemple">
-&ltscript src="script.js" onload="myFunction()">&lt/script>
+&ltscript src="script.js" onload = "myFunction()">&lt/script>
 </pre>
             <p loremdasff class="lecture__paragraph">
                 У цьому прикладі, після завантаження скрипта "script.js", буде викликана функція "myFunction()".
@@ -701,11 +701,11 @@ console.log(copy.name); // Виводить "Jane"
             </p>
 <pre class="code__exemple">
 let original = { name: "John", address: { city: "New York" } };
-let copy = JSON.parse(JSON.stringify(original));
+let copy = JSON.parse (JSON.stringify(original));
 
 copy.address.city = "London";
-console.log(original.address.city); // Виводить "New York"
-console.log(copy.address.city); // Виводить "London"
+console.log (original.address.city); // Виводить "New York"
+console.log (copy.address.city); // Виводить "London"
 </pre>
             <p class="lecture__paragraph">
             Це лише деякі аспекти роботи з об'єктами в JavaScript. Розуміння цих концепцій допоможе ефективно використовувати об'єкти для зберігання та обробки даних у коді.
@@ -1149,7 +1149,7 @@ console.log(result); // Помилка: result is not defined
             </p>
 <pre class="code__exemple">
 // Отримання елемента за його ідентифікатором
-let element = document.getElementById("myElement");
+let element = document.getElementById ("myElement");
 
 // Зміна текстового вмісту елемента
 element.textContent = "Привіт, світ!";
@@ -1160,10 +1160,10 @@ element.classList.add("highlight");
 // Додавання нового елемента
 let newElement = document.createElement("div");
 newElement.textContent = "Новий елемент";
-document.body.appendChild(newElement);
+document.body.appendChild (newElement);
 
 // Встановлення обробника події
-element.addEventListener("click", function() {
+element.addEventListener ("click", function() {
     alert("Ви натиснули на елемент!");
 });
 </pre>
@@ -1183,7 +1183,7 @@ element.addEventListener("click", function() {
                 Отримання елемента за його ідентифікатором:
             </p>
 <pre class="code__exemple">
-let element = document.getElementById("myElement");
+let element = document.getElementById ("myElement");
 </pre>
             <p class="lecture__paragraph">
                 Зміна текстового вмісту елемента:
@@ -1195,13 +1195,13 @@ element.textContent = "Новий текст";
                 Додавання класу до елемента:
             </p>
 <pre class="code__exemple">
-element.classList.add("highlight");
+element.classList.add ("highlight");
 </pre>
             <p class="lecture__paragraph">
                 Зміна атрибутів елемента:
             </p>
 <pre class="code__exemple">
-element.setAttribute("src", "image.jpg");
+element.setAttribute ("src", "image.jpg");
 </pre>
             <p class="lecture__paragraph">
                 Додавання нового елемента:
@@ -1209,7 +1209,7 @@ element.setAttribute("src", "image.jpg");
 <pre class="code__exemple">
 let newElement = document.createElement("div");
 newElement.textContent = "Новий елемент";
-document.body.appendChild(newElement);
+document.body.appendChild (newElement);
 </pre>
             <p class="lecture__paragraph">
                 Видалення елемента:
@@ -1236,8 +1236,8 @@ element.style.fontSize = "20px";
                 Зміна класів елемента:
             </p>
 <pre class="code__exemple">
-element.classList.add("highlight");
-element.classList.remove("highlight");
+element.classList.add ("highlight");
+element.classList.remove ("highlight");
 </pre>
             <p class="lecture__paragraph">
                 Ці приклади демонструють лише декілька основних операцій з DOM елементами. Завдяки цим методам та багатьом іншим, можна змінювати структуру, стилі та вміст сторінки за допомогою JavaScript. Використовуючи ці можливості, можна створювати динамічні та інтерактивні вебдодатки.
@@ -1304,9 +1304,9 @@ setInterval(function() {
             Наприклад:            
             </p>
 <pre class="code__exemple">
-const button = document.querySelector('#myButton');
+const button = document.querySelector ('#myButton');
 
-button.addEventListener('click', function() {
+button.addEventListener ('click', function() {
     console.log('Кнопка була натиснута');
 });
 </pre>
@@ -1314,9 +1314,9 @@ button.addEventListener('click', function() {
             JavaScript надає можливість реагувати на різні події миші, такі як клік, подвійний клік, наведення курсору на елемент, відведення курсору від елемента і т.д. Деякі з найпоширеніших подій миші включають <span class="lecture-mark">click</span>, <span class="lecture-mark">mouseover</span>, <span class="lecture-mark">mouseout</span>, <span class="lecture-mark">mousedown</span>, <span class="lecture-mark">mouseup</span> і т.д.
             </p>
 <pre class="code__exemple">
-const element = document.querySelector('.myElement');
+const element = document.querySelector ('.myElement');
 
-element.addEventListener('click', function() {
+element.addEventListener ('click', function() {
     console.log('Елемент був клікнутий');
 });
 </pre>
@@ -1324,7 +1324,7 @@ element.addEventListener('click', function() {
                 Також можна реагувати на події, пов'язані з натисканням клавіш на клавіатурі. Наприклад, події <span class="lecture-mark">keydown</span> та <span class="lecture-mark">keyup</span> спрацьовують, коли користувач натискає або відпускає клавішу. Ви можете отримати код клавіші, яку натиснули, за допомогою властивості <span class="lecture-mark">keyCode</span> або <span class="lecture-mark">key</span> у події.
             </p>
 <pre class="code__exemple">
-document.addEventListener('keydown', function(event) {
+document.addEventListener ('keydown', function(event) {
     console.log('Клавіша ' + event.key + ' була натиснута');
 });
 </pre>
@@ -1332,14 +1332,14 @@ document.addEventListener('keydown', function(event) {
                 Події також широко використовуються для роботи з формами. Наприклад, ви можете встановити обробник події <span class="lecture-mark">submit</span>, який виконується при відправці форми. Ви можете отримати доступ до значень полів форми та здійснити необхідні дії.
             </p>
 <pre class="code__exemple">
-const form = document.querySelector('#myForm');
+const form = document.querySelector ('#myForm');
 
-form.addEventListener('submit', function(event) {
+form.addEventListener ('submit', function(event) {
     event.preventDefault(); // Зупиняємо стандартну поведінку форми
 
     // Отримуємо значення полів форми
-    const name = document.querySelector('#name').value;
-    const email = document.querySelector('#email').value;
+    const name = document.querySelector ('#name').value;
+    const email = document.querySelector ('#email').value;
 
     // Виконуємо необхідні дії з отриманими значеннями
     console.log('Ім'я: ' + name);
@@ -1374,11 +1374,11 @@ form.addEventListener('submit', function(event) {
 let currentURL = window.location.href;
 
 // Відкриття нового вікна
-window.open('https://www.example.com', '_blank');
+window.open ('https://www.example.com', '_blank');
 
 // Додавання обробника події на клік кнопки
-let button = document.getElementById('myButton');
-button.addEventListener('click', function() {
+let button = document.getElementById ('myButton');
+button.addEventListener ('click', function() {
     // Виконання дій у відповідь на клік
     alert('Кнопка була натиснута!');
 });
@@ -1483,7 +1483,7 @@ readFile();
                 <li><span class="lecture-mark">sessionStorage</span>:
                     <ul>
                         <li><span class="lecture-mark">sessionStorage</span> зберігає дані протягом одного сеансу роботи з браузером. Як тільки сеанс закривається або сторінка перезавантажується, дані в <span class="lecture-mark">sessionStorage</span> втрачаються.</li>
-                        <li>Як і в <span class="lecture-mark">localStorage</span>, дані в <span class="lecture-mark">sessionStorage</span> зберігаються у вигляді пар ключ-значення. Доступ до даних також здійснюється через об'єкт <span class="lecture-mark">sessionStorage</span>, використовуючи методи <span class="lecture-mark">sessionStorage.setItem(key, value)</span> та <span class="lecture-mark">sessionStorage.getItem(key)</span>.</li>
+                        <li>Як і в <span class="lecture-mark">localStorage</span>, дані в <span class="lecture-mark">sessionStorage</span> зберігаються у вигляді пар ключ-значення. Доступ до даних також здійснюється через об'єкт <span class="lecture-mark">sessionStorage</span>, використовуючи методи <span class="lecture-mark">sessionStorage.setItem(key, value)</span> та <span class="lecture-mark">sessionStorage.getItem (key)</span>.</li>
                     </ul>
                 </li>
             </ol>
@@ -1492,12 +1492,12 @@ readFile();
             </p>
 <pre class="code__exemple">
 // Збереження та отримання даних в localStorage
-localStorage.setItem('username', 'John');
-const username = localStorage.getItem('username');
+localStorage.setItem ('username', 'John');
+const username = localStorage.getItem ('username');
 
 // Збереження та отримання даних в sessionStorage
-sessionStorage.setItem('token', 'abc123');
-const token = sessionStorage.getItem('token');
+sessionStorage.setItem ('token', 'abc123');
+const token = sessionStorage.getItem ('token');
 </pre>
             <p class="lecture__paragraph">
             <span class="lecture-mark">localStorage</span> та <span class="lecture-mark">sessionStorage</span> є потужними інструментами для зберігання та отримання даних на стороні клієнта. Вони дозволяють зберегти стан додатка та зручно працювати зі збереженими даними, що сприяє поліпшенню користувацького досвіду та можливості зберегти дані між сеансами роботи з браузером.
@@ -1516,7 +1516,7 @@ const token = sessionStorage.getItem('token');
             </p>
             <ol>
                 <li>HTML надає різноманітні елементи форм, такі як <span class="lecture-mark">&ltinput></span>, <span, class="lecture-mark">>&ltselect></span, <span class="lecture-mark">&lttextarea></span> та інші. Кожен елемент має свою специфіку та використовується для збору певних типів даних.</li>
-                <li>За допомогою JavaScript можна отримати значення полів форми. Наприклад, <span class="lecture-mark">document.getElementById('myInput').value</span> поверне значення текстового поля з ідентифікатором <span class="lecture-mark">myInput</span>.</li>
+                <li>За допомогою JavaScript можна отримати значення полів форми. Наприклад, <span class="lecture-mark">document.getElementById ('myInput').value</span> поверне значення текстового поля з ідентифікатором <span class="lecture-mark">myInput</span>.</li>
                 <li>Форми реагують на події, такі як натискання кнопки або введення тексту. За допомогою обробників подій, таких як <span class="lecture-mark">addEventListener</span>, можна призначити функції, які виконуються під час виникнення певних подій у формі.</li>
                 <li>Форми можуть перевіряти та валідувати дані, які вводяться користувачем. Це забезпечує контроль над правильністю введених даних перед їх відправкою на сервер.</li>
                 <li>Після заповнення форми користувач може надіслати її дані на сервер для подальшої обробки. Це здійснюється за допомогою кнопки "Submit" або вручну з використанням JavaScript.</li>
@@ -1540,12 +1540,12 @@ const token = sessionStorage.getItem('token');
     const form = document.getElementById('myForm');
 
     // Додавання обробника події при надісланні форми
-    form.addEventListener('submit', function(event) {
+    form.addEventListener ('submit', function(event) {
         event.preventDefault(); // Зупинка стандартної відправки форми
 
         // Отримання значень полів форми
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
+        const name = document.getElementById ('name').value;
+        const email = document.getElementById ('email').value;
 
         // Виконання дій з отриманими даними
         console.log('Ім'я:', name);
